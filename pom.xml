@@ -10,7 +10,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <mule.maven.plugin.version>4.0.0</mule.maven.plugin.version>
-
+        
         <!-- Added for Copado Plugin -->
         <app.runtime>4.6.14:3</app.runtime>
     </properties>
@@ -114,8 +114,8 @@
         <dependency>
             <groupId>org.mule.connectors</groupId>
             <artifactId>mule-sockets-connector</artifactId>
-            <version>1.2.2</version>
+            <version>1.2.5</version>
             <classifier>mule-plugin</classifier>
         </dependency>
-    </dependencies>    
+    </dependencies>
 </project>
