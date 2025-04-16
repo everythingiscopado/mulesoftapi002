@@ -1,0 +1,9 @@
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:sockets="http://www.mulesoft.org/schema/mule/sockets" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd  http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd  http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd  http://www.mulesoft.org/schema/mule/sockets http://www.mulesoft.org/schema/mule/sockets/current/mule-sockets.xsd">
+  <http:listener-config name="Listener-config">
+    <http:listener-connection port="8081" host="0.0.0.0"></http:listener-connection>
+  </http:listener-config>
+  <flow name="mulesoftapi002">
+    <http:listener config-ref="Listener-config" doc:id="fkxgft" doc:name="Listener" path="/helloworld"></http:listener>
+    <set-payload doc:id="qivobd" doc:name="Set payload" value="&quot;Copado MuleSoft Plugin&quot;"></set-payload>
+  </flow>
+</mule>
